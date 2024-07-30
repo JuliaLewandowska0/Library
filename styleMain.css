@@ -1,0 +1,2804 @@
+@font-face 
+{
+	font-family: Pacifico;
+	src: url(fonts/Pacifico-Regular.ttf);
+}
+
+@font-face 
+{
+	font-family: Ephesis;
+	src: url(fonts/Ephesis-Regular.ttf);
+}
+
+@font-face 
+{
+	font-family: Quicksand;
+	src: url(fonts/Quicksand-VariableFont_wght.ttf);
+}
+
+@font-face 
+{
+	font-family: PaytoneOne;
+	src: url(fonts/PaytoneOne-Regular.ttf);
+}
+
+@font-face 
+{
+	font-family: Lobster;
+	src: url(fonts/Lobster-Regular.ttf);
+}
+
+@font-face 
+{
+	font-family: Agbalumo;
+	src: url(fonts/Agbalumo-Regular.ttf);
+}
+
+body 
+{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+	overflow-y: scroll;
+}
+
+.navbar
+{
+    background-color: #373433;
+    width: 100%;
+    text-align: center;
+	position: fixed;
+	z-index: 1;
+    top: 0;
+	font-family: Quicksand;
+	height:16.5%;
+}
+
+.logoNavbarFull
+{
+	display: inline-block;
+	padding-top:10px;
+}
+
+.logoNavbar
+{
+	display: inline-block;
+	width:2.2%;
+	cursor: pointer;
+}
+
+#navbarButtons 
+{
+	font-size: 15px;
+	position: relative;
+    display: inline-block;
+    color: #D9D9D9;
+    text-align: center;
+	margin-left: 5px;
+    padding: 14px 16px;
+    text-decoration: none;
+	margin-top: 0.4%;
+	letter-spacing: 0.5px;
+	pointer-events: auto;
+}
+
+#navbarButtons::after
+{
+	content: '';
+	height: 5px;
+	width: 100%;
+	background-color: #C4571B;
+	position: absolute;
+	left: 0;
+	bottom: -4px;
+	opacity: 0;
+	transition: all 0.2s;
+	pointer-events: none;
+}
+
+#navbarButtons:hover
+{
+	display: inline-block;
+    color: white;
+    text-align: center;
+	justify-content: space-around;
+	margin-left: 5px;
+    padding: 14px 16px;
+	margin-top: 0.4%;
+	cursor: pointer;
+}
+
+#navbarButtons:hover::after
+{
+	opacity: 1;
+}
+
+#currentNavbarButton
+{
+	font-size: 15px;
+	position: relative;
+    display: inline-block;
+    color: white;
+    text-align: center;
+	margin-left: 5px;
+    padding: 14px 16px;
+    text-decoration: none;
+	margin-top: 0.4%;
+	letter-spacing: 0.5px;
+	pointer-events: none;
+	font-weight: bold;
+}
+
+#currentNavbarButton::after
+{
+	content: '';
+	height: 5px;
+	width: 100%;
+	background-color: #C4571B;
+	position: absolute;
+	left: 0;
+	bottom: -4px;
+	opacity: 1;
+	pointer-events: none;
+}
+
+#navbarLogoButton
+{
+	font-family: Pacifico;
+	position: relative;
+	display: inline-block;
+	color: #C4571B;
+    text-align: center;
+    text-decoration: none;
+}
+
+#navbarLogoButton:hover
+{
+	cursor: pointer;
+}
+
+.footer 
+{
+	display: inline-block;
+    background-color: #373433;
+	color:white;
+    padding: 10px 0;
+	bottom: 0;
+    width: 100%; 
+}
+
+.footerPicture
+{
+	display: inline-block;
+	width: 30%;
+}
+
+.footerOpeningHours
+{
+	display: inline-block;
+	width: 35%;
+}
+
+.footerLinks
+{
+	display: inline-block;
+	width: 25%;
+	font-size: 18px;
+}
+
+#footerLibraryIcon
+{
+	margin-left: 75%;
+	width: 20%;
+}
+
+#footerText1
+{
+	font-size: 12px;
+	font-family: Quicksand;
+}
+
+#footerGminaPage
+{
+	font-size: 17px;
+	text-align: center;
+	font-family: Lobster;
+	color: #C4571B;
+	transition: .5s ease;
+}
+
+#footerGminaIcon
+{
+	margin-left: 45%;
+	width: 10%;
+}
+
+#footerGminaPage:hover
+{
+	color: #DEC2AB;
+	text-shadow: 2px 2px 8px #C4571B;
+}
+
+#linkGmina
+{
+	text-decoration: none;
+}
+
+::-webkit-scrollbar 
+{
+	width: 7px;
+}
+
+::-webkit-scrollbar-track 
+{
+	background: #373433;
+}
+ 
+::-webkit-scrollbar-thumb 
+{
+	background: #C4571B; 
+	border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover 
+{
+	background: #915331; 
+	border-radius: 5px;
+}
+
+.main-content-ver1
+{
+	flex-grow: 1;
+	background-image: linear-gradient(to right, #373433, #784C35, #784C35, #784C35, #373433);
+	justify-content: center;
+	display: flex;
+}
+
+.main-content-ver2
+{	
+    flex-grow: 1;
+    padding: 60px 0;
+	margin-top: 3%;
+	background-image: linear-gradient(to right, #373433, #784C35, #784C35, #784C35, #373433);
+}
+
+.main-content-ver3
+{	
+    flex-grow: 1;
+    padding: 0 0;
+	text-align: center;
+    margin-top: 7.4%;
+	justify-content: center;
+	background-image: linear-gradient(to right, #373433, #784C35, #784C35, #784C35, #373433);
+}
+
+.main-block-RegisterLoginChange
+{
+	margin-top: 2%;
+	margin-bottom: 2%;
+	border: 2px solid #D3D3D3;
+	background-color: #D3D3D3;
+	border-radius: 15px;
+	width: 35%;
+	height: auto;
+}
+
+#main-block-ChangeInfo
+{
+	width: 60%;	
+}
+
+.registerForm
+{
+	text-align: center;
+}
+
+.text-RegisterLoginChange
+{
+	margin-top: 2%;
+	font-size: 22px;
+	font-family: PaytoneOne;
+	color: #373433;
+	cursor: default;
+}
+
+.textInsideForm-registerForm
+{
+	margin-top: 1%;
+	font-family: Quicksand;
+	font-size: 16px;
+	cursor: default;
+}
+
+#inputBracket
+{
+	margin-left: 26%;
+	margin-top: 1%;
+	display: block;
+	width: 45%;
+	padding: 5px 5px 5px 5px;
+	font-family: Quicksand;
+	border: 1px solid #C4571B;
+	border-radius: 3px;
+}
+
+.submitButton-form
+{
+	margin-top: 3%;
+	font-family: Quicksand;
+	width: 45%;
+	font-size: 16px;
+	color: whitesmoke;
+	background-color: #C4571B;
+	border: 1px solid #373433;
+	border-radius: 3px;
+	transition: 0.5s;
+}
+
+#cancelButton-form
+{
+	margin-top: 2%;
+	margin-left: 27.4%;
+}
+
+#cancelButton2-form
+{
+	margin-top: 1%;
+	margin-left: 27.4%;
+	margin-bottom: 2%;
+}
+
+.submitButton-form:hover
+{
+	color: #C4571B;
+	background-color: #373433;
+	border: 1px solid #C4571B;
+	box-shadow: 0px 0px 15px #373433;
+	cursor: pointer;
+}
+
+.loginText-RegisterForm
+{
+	margin-top: 1%;
+	font-family: Quicksand;
+	font-size: 17px;
+	color: #C4571B;
+	margin-bottom: 2%;
+	transition: 0.5s;
+	cursor: default;
+}
+
+.loginText-RegisterForm:hover
+{
+	color: crimson;
+}
+
+.formErrors
+{
+	margin-left: 6%;
+	color: #CF3423;
+	font-family: PaytoneOne;
+	font-size: 16px;
+}
+
+.formErrors2
+{
+	text-align: left;
+	margin-left: 3%;
+	color: #CF3423;
+	font-family: PaytoneOne;
+	font-size: 16px;
+}
+
+.formSuccess
+{
+	margin-left: 6%;
+	color: #37A56A;
+	font-family: PaytoneOne;
+	font-size: 16px;
+}
+
+#textInsideForm2
+{
+	font-size: 14px;
+	color: crimson;
+}
+
+#middleText-HomePage span
+{
+	color: #C4571B;
+	font-family: Pacifico;
+}
+
+.userInfo-ChangeInfo
+{
+	text-align: center;
+}
+
+#userInfoText-ChangeInfo
+{
+	font-family: Quicksand;
+	font-size: 16px;
+	text-align: left;
+	margin-left: 20%;
+	color: #C4571B; 
+	letter-spacing: 0.02em;
+}
+
+#userInfoText-ChangeInfo span
+{
+	color: black;
+}
+
+#userInfoText2-ChangeInfo
+{
+	font-family: Quicksand;
+	font-size: 16px;
+	text-align: left;
+	margin-left: 5%;
+	color: #C4571B; 
+	letter-spacing: 0.02em;
+}
+
+#userInfoText2-ChangeInfo span
+{
+	color: black;
+}
+
+.textUnderHeader-ChangeInfo
+{
+	font-family: Quicksand;
+	font-size: 14px;
+}
+
+.left
+{
+	margin-top: 15.5%;
+	float: left;
+	text-align: left;
+	width: 30%;
+}
+
+#filterTextHeader1-AllBooksDisplay
+{
+	margin-left: 2%;
+	font-family: PaytoneOne;
+	font-size: 22px;
+	color: whitesmoke;
+}
+
+#filterTextHeader4-AllBooksDisplay
+{
+	margin-top: 4%;
+	margin-left: 2%;
+	font-family: PaytoneOne;
+	font-size: 22px;
+	color: whitesmoke;
+}
+
+#filterTextHeader2-AllBooksDisplay
+{
+	margin-left: 2%;
+	margin-top: 2%;
+	font-family: PaytoneOne;
+	font-size: 20px;
+	color: #C4571B;
+}
+
+#filterTextHeader3-AllBooksDisplay
+{
+	margin-left: -15%;
+	margin-top: 2%;
+	font-family: PaytoneOne;
+	font-size: 18px;
+	color: #C4571B;
+}
+
+.listFilter-AllBooksDisplay
+{
+	list-style-type: none;
+}
+
+.listFilterItem-AllBooksDisplay
+{
+	margin-left: -15%;
+	width: 100%;
+	border: 1px solid #373433;
+	border-radius: 2px;
+	background-color: #D3D3D3;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+.formCheckLabel-AllBooksDisplay
+{
+	color: #373433;
+	font-family: Quicksand;
+	font-size: 15px;
+}
+
+.formCheckInput-AllBooksDisplay:checked
+{
+	accent-color: #C4571B;
+}
+
+.formCheckInput-AllBooksDisplay:hover
+{
+	cursor: pointer;
+}
+
+#headerDisplayBooks-AllBooksDisplay
+{
+	font-family: PaytoneOne;
+	color: whitesmoke;
+	font-size: 30px;
+	margin-bottom: 0.5%;
+}
+
+#headerDisplayBooks-AllBooksDisplay6
+{
+	margin-left: 14%;
+	font-family: PaytoneOne;
+	color: whitesmoke;
+	font-size: 30px;
+	margin-bottom: 0.5%;
+}
+
+#textUnderDisplayHeader-AllBooksDisplay
+{
+	margin-bottom: 2%;
+	font-family: Quicksand;
+	color: #D9D9D9;
+	font-size: 14px;
+}
+
+#textUnderDisplayHeader-AllBooksDisplay6
+{
+	margin-left: 14%;
+	margin-bottom: 2%;
+	font-family: Quicksand;
+	color: #D9D9D9;
+	font-size: 14px;
+}
+
+.page
+{
+	display: inline-block;
+}
+
+.right
+{
+	width: 100%;
+	margin-left: 30%;
+}
+
+.right5
+{
+	width: 950px;
+	margin-left: 30%;
+}
+
+.right6
+{
+	width: 950px;
+	margin-left: 9%;
+}
+
+.left2
+{
+	width: 10%;
+}
+
+#bookCovers
+{
+	margin-left: 20%;
+	height: 100px;
+	width: 80%;
+	float: left;
+	border: 0.5px solid #C4571B;
+}
+
+.title
+{
+	margin-left: 13%;
+	font-family: Lobster;
+	font-size: 20px;
+	margin-bottom: 0;
+}
+
+.author
+{
+	margin-top: 0;
+	font-family: Ephesis;
+	margin-left: 13%;
+	font-size: 20px;
+}
+
+.product
+{
+	height: 100px;
+	width: 900px;
+	padding: 10px 10px;
+	background-color: whitesmoke;
+	border-radius: 10px;
+	border: 1px solid #C4571B;
+	transition: 0.5s;
+}
+
+.product:hover
+{
+	cursor: pointer;
+	background-color: #D3D3D3;
+}
+
+.searchBar-AllBooksDisplay
+{
+	margin-top: 2%;
+	width: 100%;
+}
+
+#searchField-AllBooksDisplay
+{
+	padding-top: 4px;
+	padding-bottom: 4px;
+	padding-left: 10px;
+	width: 80%;
+	font-family: Quicksand;
+	font-size: 16px;
+}
+
+#submitSearchFieldButton-AllBooksDisplay
+{
+	padding: 4px 15px 4px 15px;
+	margin-left: 1.5%;
+	font-family: Quicksand;
+	font-size: 16px;
+	background-color: #C4571B;
+	color: white;
+	transition: 0.5s;
+}
+
+#submitSearchFieldButton-AllBooksDisplay:hover
+{
+	color: #C4571B;
+	cursor: pointer;
+	background-color: #373433;
+	box-shadow: 0px 0px 15px whitesmoke;
+}
+
+.main-block-AccountDetails
+{
+	display: inline-block;
+	width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+	height: 100%;
+	background-image: url("images/kartka_profilu.png");
+	margin-bottom: 3%;
+}
+
+.information_text-AccountsDetails
+{
+    font-family: PaytoneOne;
+	color: whitesmoke;
+	font-size: 30px;
+    margin-top: 2%;
+    text-align: left;
+    margin-left: 9.5%;
+}
+
+#user_first_name-AccountDetails
+{
+    font-size: 60px;
+    font-family: Ephesis;
+    text-align: left;
+    margin-left: 26%;
+    margin-top: 1%;
+}
+
+#user_last_name-AccountDetails
+{
+    font-size: 60px;
+    font-family: Ephesis;
+    margin-left: 26%;
+    text-align: left;
+}
+
+#user_birth_date-AccountDetails
+{
+    font-family: Quicksand;
+    font-size: 20px;
+    margin-left: 26%;
+    text-align: left;
+    margin-top: 0.5%;
+}
+
+#user_pesel-AccountDetails
+{
+    font-family: Quicksand;
+    font-size: 20px;
+    margin-left: 26%;
+    text-align: left;
+    margin-top: 0.5%;
+}
+
+#user_email_address-AccountDetails
+{
+    font-family: Quicksand;
+    font-size: 20px;
+    margin-left: 26%;
+    text-align: left;
+    margin-top: 0.5%;
+}
+
+#user_username-AccountDetails
+{
+    font-family: Quicksand;
+    font-size: 20px;
+    margin-left: 26%;
+    text-align: left;
+    margin-top: 0.5%;
+}
+
+#user_address-AccountDetails
+{
+    font-family: Quicksand;
+    font-size: 20px;
+    margin-left: 26%;
+    text-align: left;
+    margin-top: 0.5%;
+}
+
+#user_phone_number-AccountDetails
+{
+    font-family: Quicksand;
+    font-size: 20px;
+    margin-left: 26%;
+    text-align: left;
+    margin-top: 0.5%;
+}
+
+#change_info_button-AccountDetails
+{
+    margin-top: 3%;
+	font-family: Quicksand;
+	padding: 10px 30px 10px 30px;
+	box-shadow: 0 0 20px #373433;
+	background-color: #DEC2AB;
+	color: #373433;
+	font-size: 18px;
+	width: 22%;
+	text-align: center;
+	margin-left: auto;
+  	margin-right: auto;
+	display: block;
+	transition: 0.5s;
+}
+
+#change_info_button-AccountDetails:hover
+{
+    color: #C4571B;
+	width: 25%;
+	cursor: pointer;
+	box-shadow: 0px 0px 15px #C4571B;
+	background-color: #373433;
+	letter-spacing: 0.05em;
+}
+
+#return_button-AccountDetails
+{
+    margin-top: 1.5%;
+	font-family: Quicksand;
+	padding: 10px 30px 10px 30px;
+	box-shadow: 0 0 20px #373433;
+	background-color: #DEC2AB;
+	color: #373433;
+	font-size: 18px;
+	width: 22%;
+	text-align: center;
+	margin-left: auto;
+  	margin-right: auto;
+	display: block;
+	transition: 0.5s;
+}
+
+#return_button-AccountDetails:hover
+{
+    color: #C4571B;
+	width: 25%;
+	cursor: pointer;
+	box-shadow: 0px 0px 15px #C4571B;
+	background-color: #373433;
+	letter-spacing: 0.05em;
+}
+
+#rent_button-AccountDetails
+{
+    margin-top: 1.5%;
+	font-family: Quicksand;
+	padding: 10px 30px 10px 30px;
+	box-shadow: 0 0 20px #373433;
+	background-color: #DEC2AB;
+	color: #373433;
+	font-size: 18px;
+	width: 22%;
+	text-align: center;
+	margin-left: auto;
+  	margin-right: auto;
+	display: block;
+	margin-bottom: 2%;
+	transition: 0.5s;
+}
+
+#rent_button-AccountDetails:hover
+{
+    color: #C4571B;
+	width: 25%;
+	cursor: pointer;
+	box-shadow: 0px 0px 15px #C4571B;
+	background-color: #373433;
+	letter-spacing: 0.05em;
+}
+
+#textInsideForm-AddBook
+{
+    font-family: Quicksand;
+    font-size: 18px;
+    margin-left: 2%;
+    margin-top: 1%;
+    display: block;
+}
+
+#textInsideForm2-AddBook
+{
+    font-family: Quicksand;
+    font-size: 16px;
+    margin-left: 2%;
+    margin-top: 1%;
+    display: block;
+}
+
+#inputBracket-AddBook
+{
+    margin-left: 2%;
+    font-size: 16px;
+    font-family: Quicksand;
+    width: 90%;
+    padding: 5px 5px 5px 5px;
+	border: 1px solid #C4571B;
+	border-radius: 3px;
+}
+
+#inputBracket3-AddBook
+{
+	margin-left: 2%;
+	margin-bottom: 1%;
+	margin-top: 1%;
+    font-size: 16px;
+    font-family: Quicksand;
+    width: 90%;
+    padding: 5px 5px 5px 5px;
+	border: 1px solid #C4571B;
+	border-radius: 3px;
+}
+
+#inputBracket2-AddBook
+{
+    margin-left: 2%;
+    font-size: 16px;
+    font-family: Quicksand;
+    width: 90%;
+    resize: none;
+	border: 1px solid #C4571B;
+	border-radius: 3px;
+}
+
+#choseBracket-AddBook
+{
+    margin-left: 2%;
+    font-size: 16px;
+    font-family: Quicksand;
+    width: 40%;
+    padding: 5px 5px 5px 5px;
+	border: 1px solid whitesmoke;
+	border-radius: 3px;
+    color: whitesmoke;
+    background-color: #C4571B;
+}
+
+#choseBracket-DocTemplate
+{
+	justify-content: center;
+	text-align: center;
+	display: block;
+    margin-left: auto;
+	margin-right: auto;
+    font-size: 16px;
+    font-family: Quicksand;
+    width: 50%;
+    padding: 3px 5px 3px 5px;
+	border: 1px solid #373433;
+	border-radius: 3px;
+    color: #C4571B;
+    background-color: whitesmoke;
+}
+
+#choseBracket-DocTemplate:hover
+{
+	cursor: pointer;
+}
+
+#submitButton-AddBook
+{
+    display: block;
+    margin-left: 48.3%;
+}
+
+#cancelButton-AddBook
+{
+    display: block;
+    text-align: center;
+    margin-top: 1%;
+    margin-left: 48.3%;
+    margin-bottom: 2%;
+}
+
+#headerText-AddBook
+{
+    text-align: center;
+}
+
+#textUnderHeader-AddBook
+{
+    font-size: 14px;
+    font-family: Quicksand;
+    text-align: center;
+    color: crimson;
+}
+
+.main-block-AdminPanel
+{
+	display: inline-block;
+	justify-content: center;
+	width: 80%;
+	height: auto;
+	background-color: whitesmoke;
+}
+
+#first-button-AdminPanel
+{
+	margin-top: 5%;
+	width: 64%;
+	display: inline-block;
+	padding: 10px 10px;
+	font-family: Quicksand;
+	font-size: 19px;
+	border: 2px solid #373433;
+	border-radius: 5px;
+	transition: 0.3s;
+}
+
+#first-button-AdminPanel:hover
+{
+	width: 80%;
+	border: 2px solid #C4571B;
+	background-color: #373433;
+	color: whitesmoke;
+	letter-spacing: 0.1em;
+	border-radius: 0px;
+	cursor: pointer;
+}
+
+#buttons-AdminPanel
+{
+	margin-top: 2%;
+	width: 64%;
+	display: inline-block;
+	padding: 10px 10px;
+	font-family: Quicksand;
+	font-size: 19px;
+	border: 2px solid #373433;
+	border-radius: 5px;
+	transition: 0.3s;
+}
+
+#buttons-AdminPanel:hover
+{
+	width: 80%;
+	border: 2px solid #C4571B;
+	border-radius: 0px;
+	background-color: #373433;
+	color: whitesmoke;
+	letter-spacing: 0.1em;
+	cursor: pointer;
+}
+
+#last-button-AdminPanel
+{
+	margin-top: 2%;
+	margin-bottom: 5%;
+	width: 64%;
+	display: inline-block;
+	padding: 10px 10px;
+	font-family: Quicksand;
+	font-size: 19px;
+	border: 2px solid #373433;
+	border-radius: 5px;
+	transition: 0.3s;
+}
+
+#last-button-AdminPanel:hover
+{
+	width: 80%;
+	border: 2px solid #C4571B;
+	border-radius: 0px;
+	background-color: #373433;
+	color: whitesmoke;
+	letter-spacing: 0.1em;
+	cursor: pointer;
+}
+
+#headerDisplayAccounts-AllAccountsDisplay
+{
+    margin-left: 14%;
+	font-family: PaytoneOne;
+	color: whitesmoke;
+	font-size: 30px;
+	margin-bottom: 0.5%;
+}
+
+#textUnderDisplayHeader-AllAccountsDisplay
+{
+    margin-left: 14%;
+	margin-bottom: 2%;
+	font-family: Quicksand;
+	color: #D9D9D9;
+	font-size: 14px;
+}
+
+.left1
+{
+	width: 10%;
+}
+
+#profilePicture
+{
+	margin-top: 0;
+	margin-left: 20%;
+	height: 56px;
+	width: 65%;
+	float: left;
+}
+
+.profile
+{
+	margin-left: 14%;
+	height: 60px;
+	width: 900px;
+	padding: 10px 10px;
+	background-color: whitesmoke;
+	border-radius: 10px;
+	border: 1px solid #C4571B;
+	transition: 0.5s;
+}
+
+.profile:hover
+{
+	cursor: pointer;
+	background-color: #D3D3D3;
+}
+
+.surname
+{
+	display: inline-block;
+    margin-top: 0;
+	margin-left: 1%;
+	font-family: Lobster;
+	font-size: 24px;
+    margin-bottom: 0;
+}
+
+.name
+{
+	display: inline-block;
+    margin-top: 0;
+	margin-left: 0.5%;
+	font-family: Lobster;
+	font-size: 24px;
+    margin-bottom: 0;
+}
+
+.profileName
+{
+	margin-top: 0;
+	font-family: Quicksand;
+	margin-left: 10%;
+	font-size: 16px;
+}
+
+.searchBar-AllAccounts
+{
+	margin-left: 14%;
+	margin-top: 2%;
+	width: 78%;
+}
+
+#searchField-AllAccounts
+{
+	padding-top: 4px;
+	padding-bottom: 4px;
+	padding-left: 10px;
+	width: 80%;
+	font-family: Quicksand;
+	font-size: 16px;
+}
+
+#submitSearchFieldButton-AllAccounts
+{
+	padding: 4px 15px 4px 15px;
+	margin-left: 1.5%;
+	font-family: Quicksand;
+	font-size: 16px;
+	background-color: #C4571B;
+	color: white;
+	transition: 0.5s;
+}
+
+#submitSearchFieldButton-AllAccounts:hover
+{
+	color: #C4571B;
+	cursor: pointer;
+	background-color: #373433;
+	box-shadow: 0px 0px 15px whitesmoke;
+}
+
+#returnButton_style1
+{
+	margin-left: 14%;
+	margin-top: 2%;
+	font-family: Quicksand;
+	padding: 10px 30px 10px 30px;
+	box-shadow: 0 0 40px #373433;
+	background-color: #DEC2AB;
+	color: #373433;
+	font-size: 18px;
+	width: 22%;
+	text-align: center;
+	transition: 0.5s;
+}
+
+#returnButton_style1:hover
+{
+	color: #C4571B;
+	width: 23%;
+	cursor: pointer;
+	box-shadow: 0px 0px 15px whitesmoke;
+	background-color: #373433;
+	letter-spacing: 0.05em;
+}
+
+#returnButton_style5
+{
+	margin-top: 2%;
+	font-family: Quicksand;
+	padding: 10px 30px 10px 30px;
+	box-shadow: 0 0 40px #373433;
+	background-color: #DEC2AB;
+	color: #373433;
+	font-size: 18px;
+	width: 22%;
+	text-align: center;
+	transition: 0.5s;
+}
+
+#returnButton_style5:hover
+{
+	color: #C4571B;
+	width: 23%;
+	cursor: pointer;
+	box-shadow: 0px 0px 15px whitesmoke;
+	background-color: #373433;
+	letter-spacing: 0.05em;
+}
+
+.main-block-BookDetails
+{
+	box-shadow: 0 0 35px #373433;
+	display: inline-block;
+	justify-content: center;
+	width: 80%;
+	height: auto;
+	background-image: url("images/paper_texture4.jpg");
+}
+
+.right-side-BookDetails
+{
+	box-shadow: 0 0 35px #373433;
+	margin-left: 32.3%;
+	margin-top: 4%;
+	margin-bottom: 2%;
+	width: 60%;
+	height: auto;
+	background-color: whitesmoke;
+}
+
+#book_title-BookDetails
+{
+	font-size: 38px;
+	padding-top: 7px;
+	padding-left: 15px;
+	padding-bottom: 7px;
+	width: 97.6%;
+	background-color: #292929;
+	text-align: left;
+	color: #C4571B;
+	font-family: PaytoneOne;
+}
+
+#book_author-BookDetails
+{
+	padding-top: 7px;
+	padding-left: 15px;
+	padding-bottom: 7px;
+	width: 97.6%;
+	background-color: #373433;
+	font-size: 23px;
+	text-align: left;
+	color: #BD531A;
+	font-family: Lobster;
+}
+
+#book_year-BookDetails
+{
+	font-size: 17px;
+	margin-top: 1%;
+	margin-left: 2%;
+	text-align: left;
+	color: #373433;
+	font-family: Quicksand;
+}
+
+#book_publisher-BookDetails
+{
+	font-size: 17px;
+	margin-top: 1%;
+	margin-left: 2%;
+	text-align: left;
+	color: #373433;
+	font-family: Quicksand;
+}
+
+#book_pages-BookDetails
+{
+	font-size: 17px;
+	margin-top: 1%;
+	margin-left: 2%;
+	text-align: left;
+	color: #373433;
+	font-family: Quicksand;
+}
+
+#book_genre-BookDetails
+{
+	font-size: 17px;
+	margin-top: 1%;
+	margin-left: 2%;
+	text-align: left;
+	color: #373433;
+	font-family: Quicksand;
+}
+
+#book_translator-BookDetails
+{
+	font-size: 17px;
+	margin-top: 1%;
+	margin-left: 2%;
+	text-align: left;
+	color: #373433;
+	font-family: Quicksand;
+}
+
+#book_orglanguage-BookDetails
+{
+	font-size: 17px;
+	margin-top: 1%;
+	margin-left: 2%;
+	text-align: left;
+	color: #373433;
+	font-family: Quicksand;
+}
+
+.description-BookDetails
+{
+	box-shadow: 0 0 35px #373433;
+	display: inline-block;
+	background-color: whitesmoke;
+	padding: 10px 15px 10px 15px;
+	font-family: Quicksand;
+	color: #373433;
+	margin-left: 7.5%;
+	margin-right: 7.5%;
+	margin-bottom: 2%;
+}
+
+#description-text-BookDetails
+{
+	text-align: left;
+	color: #C4571B;
+	font-family: PaytoneOne;
+	font-size: 19px;
+}
+
+#book_description-BookDetails
+{
+	text-align: left;
+	font-size: 17px;
+}
+
+#book_cover-BookDetails
+{
+	box-shadow: 0 0 35px #373433;
+	float: left;
+	width: 25%;
+	margin-top: 2%;
+	margin-bottom: 2%;
+	margin-left: 7.5%;
+	margin-right: 0;
+}
+
+#book_birthday-BookDetails
+{
+	font-size: 17px;
+	margin-top: 1%;
+	margin-left: 2%;
+	text-align: left;
+	color: #373433;
+	font-family: Quicksand;
+}
+
+#returnButton_style2
+{
+	margin-top: 2%;
+	font-family: Quicksand;
+	padding: 10px 30px 10px 30px;
+	box-shadow: 0 0 40px #373433;
+	background-color: #DEC2AB;
+	color: #373433;
+	font-size: 18px;
+	width: 22%;
+	text-align: center;
+	display: inline-block;
+	margin-bottom: 4%;
+	transition: 0.5s;
+}
+
+#returnButton_style2:hover
+{
+	color: #C4571B;
+	width: 25%;
+	cursor: pointer;
+	box-shadow: 0px 0px 15px whitesmoke;
+	background-color: #373433;
+	letter-spacing: 0.05em;
+}
+
+#book_status-BookDetails
+{
+	margin-top: 2%;
+	font-family: PaytoneOne;
+	padding: 9px 29px 9px 29px;
+	box-shadow: 0 0 40px #373433;
+	background-color: whitesmoke;
+	border: 2px solid #C4571B;
+	color: #C4571B;
+	font-size: 18px;
+	margin-left: auto;
+  	margin-right: auto;
+	width: 22%;
+	text-align: center;
+	display: block;
+}
+
+.returnButton_style3
+{
+	margin-top: 1%;
+	font-family: Quicksand;
+	padding: 10px 30px 10px 30px;
+	box-shadow: 0 0 40px #373433;
+	background-color: #DEC2AB;
+	color: #373433;
+	font-size: 18px;
+	width: 22%;
+	text-align: center;
+	margin-left: auto;
+  	margin-right: auto;
+	display: block;
+	transition: 0.5s;
+}
+
+.returnButton_style3:hover
+{
+	color: #C4571B;
+	width: 25%;
+	cursor: pointer;
+	box-shadow: 0px 0px 15px whitesmoke;
+	background-color: #373433;
+	letter-spacing: 0.05em;
+}
+
+#add_to_favorite_rent-BookDetails
+{
+	margin-bottom: 4%;
+}
+
+.main-block-Contacts
+{
+	display: inline-block;
+	justify-content: center;
+	width: 80%;
+	height: auto;
+	background-color: whitesmoke;
+}
+
+#mainContactsText-Contacts
+{
+	cursor: default;
+	font-size: 20px;
+	font-family: PaytoneOne;
+}
+
+#contactsText-Contacts
+{
+	letter-spacing: 0.07em;
+	font-size: 17px;
+	font-family: Quicksand;
+	color: #783511;
+}
+
+#libraryImage-Contacts
+{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 14%;
+	float: center;
+}
+
+#imageText-Contacts
+{
+	cursor: default;
+	font-size: 24px;
+	color: #C4571B;
+	font-family: Pacifico;
+}
+
+#headerDisplayBooks-FavouriteModify
+{
+    margin-left: 6%;
+	font-family: PaytoneOne;
+	color: whitesmoke;
+	font-size: 30px;
+	margin-bottom: 0.5%;
+}
+
+#headerDisplayBooks-FavouriteModify2
+{
+	margin-top: 0;
+    margin-left: 6%;
+	font-family: PaytoneOne;
+	color: whitesmoke;
+	font-size: 30px;
+	margin-bottom: 0.5%;
+}
+
+#textUnderDisplayHeader-FavouriteModify
+{
+	margin-left: 6%;
+	font-family: Quicksand;
+	color: #D9D9D9;
+	font-size: 14px;
+}
+
+#text2UnderDisplayHeader-FavouriteModify
+{
+    margin-left: 6%;
+	margin-bottom: 2%;
+	font-family: Quicksand;
+	color: #D9D9D9;
+	font-size: 14px;
+}
+
+#liveSearch-ModifyDatabase
+{
+    margin-left: 6%;
+    width: 87%;
+    padding: 4px 4px 4px 4px;
+    font-family: Quicksand;
+    font-size: 16px;
+    margin-bottom: 2%;
+}
+
+#liveSearch-BooksArchive
+{
+	margin-top: 2%;
+    margin-left: 6%;
+    width: 87%;
+    padding: 4px 4px 4px 4px;
+    font-family: Quicksand;
+    font-size: 16px;
+    margin-bottom: 2%;
+}
+
+#returnButton-FavouriteModify
+{
+    margin-left: 6%;
+	margin-top: 2%;
+	font-family: Quicksand;
+	padding: 10px 30px 10px 30px;
+	box-shadow: 0 0 40px #373433;
+	background-color: #DEC2AB;
+	color: #373433;
+	font-size: 18px;
+	width: 22%;
+	text-align: center;
+	transition: 0.5s;
+}
+
+#returnButton-FavouriteModify:hover
+{
+    color: #C4571B;
+	width: 23%;
+	cursor: pointer;
+	box-shadow: 0px 0px 15px whitesmoke;
+	background-color: #373433;
+	letter-spacing: 0.05em;
+}
+
+.contentTable-FavouriteModify
+{
+    margin-left: 6%;
+    background-color: whitesmoke;
+    border: 1px solid #C4571B;
+    border-radius: 5px;
+    margin-right: 6%;
+}
+
+.contentTable-Statistics
+{
+    margin-left: 6%;
+    background-color: whitesmoke;
+    border: 1px solid #C4571B;
+    border-radius: 5px;
+    margin-right: 6%;
+}
+
+.tableColumnNames-FavouriteModify
+{
+    font-family: PaytoneOne;
+    font-size: 17px;
+}
+
+.tableColumnNames-Statistics
+{
+    font-family: PaytoneOne;
+    font-size: 17px;
+}
+
+.tableColumn-FavouriteModify
+{
+    border: 1px solid #C4571B;
+    background-color: #C4571B;
+    color: #373433;
+    border-radius: 4px;
+}
+
+.tableColumn-Statistics
+{
+    border: 1px solid #C4571B;
+    background-color: #C4571B;
+    color: #373433;
+    border-radius: 4px;
+}
+
+#column1-Modify
+{
+    width: 6%;
+}
+
+#column2-Modify
+{
+    width: 27%;
+}
+
+#column3-Modify
+{
+    width: 13%;
+}
+
+#column4-Modify
+{
+    width: 11%;
+}
+
+#column5-Modify
+{
+    width: 8%;
+}
+
+#column6-Modify
+{
+    width: 13%;
+}
+
+#column7-Modify
+{
+    width: 7%;
+}
+
+#column8-Modify
+{
+    width: 9%;
+}
+
+#column9-Modify
+{
+    width: 6%;
+}
+
+#column10-Modify
+{
+    width: 7%;
+}
+
+#column11-Modify
+{
+    width: 35%;
+}
+
+#column12-Modify
+{
+    width: 29%;
+}
+
+#column13-Modify
+{
+    width: 17%;
+}
+
+#column14-Modify
+{
+    width: 12%;
+}
+
+#column15-Modify
+{
+    width: 10%;
+}
+
+#column16-Modify
+{
+    width: 12%;
+}
+
+#column17-Modify
+{
+    width: 12%;
+}
+
+#tableColumnStatus-FavouriteModify
+{
+    border: 1px solid #C4571B;
+    background-color: #C4571B;
+    color: #373433;
+    border-radius: 4px;
+    width: 9%;
+}
+
+#bookCovers-FavouriteModify
+{
+    width: 100%;
+    height: 110px;
+}
+
+#tableRowCover-FavouriteModify
+{
+    width: 3%;
+    border: 1px solid #C4571B;
+    border-radius: 4px;
+}
+
+#tableRow-FavouriteModify
+{
+    border: 1px solid #C4571B;
+    border-radius: 4px;
+    text-align: center;
+    font-family: Quicksand;
+    font-size: 16px;
+    width: auto;
+}
+
+#tableRow-Statistics
+{
+    border: 1px solid #C4571B;
+    border-radius: 4px;
+    text-align: center;
+	background-color: #D3D3D3;
+    font-family: Quicksand;
+    font-size: 16px;
+    width: auto;
+}
+
+#tableColumnButton-FavouriteModify
+{
+    border: 1px solid #C4571B;
+    background-color: #C4571B;
+    color: #373433;
+    border-radius: 4px;
+    width: 15%;
+}
+
+.tableButton-FavouriteModify
+{
+    font-family: Quicksand;
+    background-color: #D9D9D9;
+    font-size: 16px;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 4px 20px 4px 20px;
+    border: 2px solid #CF3423;
+    border-radius: 4px;
+    color: #373433;
+    transition: 0.3s;
+}
+
+.tableButton-FavouriteModify:hover
+{
+    background-color: #CF3423;
+    padding: 7px 23px 7px 23px;
+    border: 2px solid #CF3423;
+    border-radius: 2px;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+#tableButton2-FavouriteModify
+{
+    width: 60%;
+    border: 2px solid #3F69B1;
+}
+
+#tableButton2-FavouriteModify:hover
+{
+    padding: 4px 20px 4px 20px;
+    background-color: #3F69B1;
+    border: 2px solid #3F69B1;
+}
+
+#tableButton3-FavouriteModify
+{
+    width: 95%;
+}
+
+#tableButton3-FavouriteModify:hover
+{
+    padding: 4px 20px 4px 20px;
+}
+
+#tableButton4-FavouriteModify
+{
+    border: 2px solid #734B96;
+	width: 60%;
+}
+
+#tableButton4-FavouriteModify:hover
+{
+    background-color: #734B96;
+    border: 2px solid #734B96;
+}
+
+#headerDisplayBooks-FavouriteModify span
+{
+    font-family: Pacifico;
+    color: #DEC2AB;
+}
+
+.picture-HomePage
+{
+	text-align: center;
+	position: relative;
+}
+
+#bookcasePicture-HomePage
+{
+	width: 100%;
+}
+
+.pictureMiddleText-HomePage
+{
+	width: 50%;
+	padding: 10px 90px;
+	background-color: #DEC2AB;
+	position: absolute;
+	top: 20%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border: 1px solid #C4571B;
+	-webkit-box-shadow: 0 0 30px #373433;
+			box-shadow: 0 0 30px #373433;
+}
+
+#middleText-HomePage
+{
+	color: #373433;
+	font-family: Quicksand;
+	font-size: 20px;
+}
+
+#middleTextQuote-HomePage
+{
+	color: #373433;
+	font-family: Lobster;
+	font-size: 20px;
+}
+
+#middleTextItalic-HomePage
+{
+	color: #373433;
+	font-family: Ephesis;
+	font-size: 20px;
+}
+
+#arrow-HomePage
+{
+	color: #DEC2AB;
+	font-size: 50px;
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.main-block-HomePage
+{
+	display: inline-block;
+	justify-content: center;
+	width: 80%;
+	height: auto;
+	background-color: whitesmoke;
+}
+
+.buttonOne-HomePage
+{
+	position: relative;
+	margin-top: 5%;
+	display: inline-block;
+	width: 80%;
+	height: 200px;
+	background-color: whitesmoke;
+	border: 2px solid #DEC2AB;
+	transition: 0.5s;
+}
+
+.buttonOne-HomePage:hover
+{
+	width: 82%;
+	box-shadow: 0 0 35px #DEC2AB;
+	cursor: pointer;
+}
+
+.buttonOnePicture-HomePage
+{
+	margin-top: 3%;
+	margin-left: 3%;
+	width: 28%;
+	float: left;
+	transition: 0.5s;
+}
+
+.buttonOne-HomePage:hover .buttonOnePicture-HomePage
+{
+	width: 30%;
+	margin-top: 2%;
+	margin-left: 2%;
+}
+
+#headerButton1-HomePage
+{
+	font-size: 23px;
+	font-family: PaytoneOne;
+	text-align: left;
+	margin-left: 34%;
+	margin-top: 5%;
+	transition: 0.5s;
+}
+
+.buttonOne-HomePage:hover #headerButton1-HomePage
+{
+	letter-spacing: 0.05em;
+}
+
+#textButton1-HomePage
+{
+	font-size: 16px;
+	font-family: Quicksand;
+	text-align: left;
+	margin-left: 34%;
+	transition: 0.5s;
+}
+
+.buttonOne-HomePage:hover #textButton1-HomePage
+{
+	letter-spacing: 0.02em;
+}
+
+.buttonTwo-HomePage
+{
+	margin-top: 5%;
+	display: inline-block;
+	justify-content: center;
+	width: 80%;
+	height: 200px;
+	background-color: whitesmoke;
+	border: 2px solid #DEC2AB;
+	transition: 0.5s;
+}
+
+.buttonTwo-HomePage:hover
+{
+	width: 82%;
+	box-shadow: 0 0 35px #DEC2AB;
+	cursor: pointer;
+}
+
+.buttonTwoPicture-HomePage
+{
+	margin-top: 3%;
+	margin-right: 3%;
+	width: 28%;
+	float: right;
+	transition: 0.5s;
+}
+
+.buttonTwo-HomePage:hover .buttonTwoPicture-HomePage
+{
+	width: 30%;
+	margin-top: 2%;
+	margin-right: 2%;
+}
+
+#headerButton2-HomePage
+{
+	font-size: 23px;
+	font-family: PaytoneOne;
+	text-align: right;
+	margin-right: 34%;
+	margin-top: 5%;
+	transition: 0.5s;
+}
+
+.buttonTwo-HomePage:hover #headerButton2-HomePage
+{
+	letter-spacing: 0.05em;
+}
+
+#textButton2-HomePage
+{
+	font-size: 16px;
+	font-family: Quicksand;
+	text-align: right;
+	margin-right: 34%;
+	transition: 0.5s;
+}
+
+.buttonTwo-HomePage:hover #textButton2-HomePage
+{
+	letter-spacing: 0.02em;
+}
+
+.buttonThree-HomePage
+{
+	margin-top: 5%;
+	display: inline-block;
+	justify-content: center;
+	width: 80%;
+	height: 200px;
+	background-color: whitesmoke;
+	border: 2px solid #DEC2AB;
+	transition: 0.5s;
+}
+
+.buttonThree-HomePage:hover
+{
+	width: 82%;
+	box-shadow: 0 0 35px #DEC2AB;
+	cursor: pointer;
+}
+
+.buttonThreePicture-HomePage
+{
+	margin-top: 3%;
+	margin-left: 3%;
+	width: 28%;
+	float: left;
+	transition: 0.5s;
+}
+
+.buttonThree-HomePage:hover .buttonThreePicture-HomePage
+{
+	width: 30%;
+	margin-top: 2%;
+	margin-left: 2%;
+}
+
+#headerButton3-HomePage
+{
+	font-size: 23px;
+	font-family: PaytoneOne;
+	text-align: left;
+	margin-left: 34%;
+	margin-top: 5%;
+	transition: 0.5s;
+}
+
+.buttonThree-HomePage:hover #headerButton3-HomePage
+{
+	letter-spacing: 0.05em;
+}
+
+#textButton3-HomePage
+{
+	font-size: 16px;
+	font-family: Quicksand;
+	text-align: left;
+	margin-left: 34%;
+	transition: 0.5s;
+}
+
+.buttonThree-HomePage:hover #textButton3-HomePage
+{
+	letter-spacing: 0.02em;
+}
+
+.buttonFour-HomePage
+{
+	margin-top: 5%;
+	margin-bottom: 5%;
+	display: inline-block;
+	justify-content: center;
+	width: 80%;
+	height: 200px;
+	background-color: whitesmoke;
+	border: 2px solid #DEC2AB;
+	transition: 0.5s;
+}
+
+.buttonFour-HomePage:hover
+{
+	width: 82%;
+	box-shadow: 0 0 35px #DEC2AB;
+	cursor: pointer;
+}
+
+.buttonFourPicture-HomePage
+{
+	margin-top: 3%;
+	margin-right: 3%;
+	width: 28%;
+	float: right;
+	transition: 0.5s;
+}
+
+.buttonFour-HomePage:hover .buttonFourPicture-HomePage
+{
+	width: 30%;
+	margin-top: 2%;
+	margin-right: 2%;
+}
+
+#headerButton4-HomePage
+{
+	font-size: 23px;
+	font-family: PaytoneOne;
+	text-align: right;
+	margin-right: 34%;
+	margin-top: 3.5%;
+	transition: 0.5s;
+}
+
+.buttonFour-HomePage:hover #headerButton4-HomePage
+{
+	letter-spacing: 0.05em;
+}
+
+#textButton4-HomePage
+{
+	font-size: 16px;
+	font-family: Quicksand;
+	text-align: right;
+	margin-right: 34%;
+	transition: 0.5s;
+}
+
+.buttonFour-HomePage:hover #textButton4-HomePage
+{
+	letter-spacing: 0.02em;
+}
+
+.main_buttons_Admin-HomePage
+{
+	background-image: url("images/libraryBookcase2.jpg");
+	background-size: cover;
+	display: inline-block;
+	width: 100%;
+	height: auto;
+}
+
+.main_button1_Admin-HomePage
+{
+	background: rgba(245, 245, 245, 0.75);
+	padding-top: 5%;
+	padding-bottom: 5%;
+	margin-right: 2%;
+	margin-top: 9%;
+	margin-bottom: 10%;
+	display: inline-block;
+	width: 40%;
+	transition: 0.5s;
+	border: 3px solid #373433;
+}
+
+#buttonRent-HomePage
+{
+	color: #373433;
+	font-family: Lobster;
+	font-size: 30px;
+	transition: 0.5s;
+}
+
+.main_button1_Admin-HomePage:hover
+{
+	background-color: #DEC2AB;
+	cursor: pointer;
+	box-shadow: 0 0 35px #373433;
+}
+
+.main_button1_Admin-HomePage:hover #buttonRent-HomePage
+{
+	letter-spacing: 0.05em;
+}
+
+.main_button2_Admin-HomePage
+{
+	background: rgba(245, 245, 245, 0.75);
+	padding-top: 5%;
+	padding-bottom: 5%;
+	margin-left: 2%;
+	margin-top: 9%;
+	margin-bottom: 10%;
+	display: inline-block;
+	width: 40%;
+	transition: 0.5s;
+	border: 3px solid #373433;
+}
+
+#buttonReturn-HomePage
+{
+	color: #373433;
+	font-family: Lobster;
+	font-size: 30px;
+	transition: 0.5s;
+}
+
+.main_button2_Admin-HomePage:hover
+{
+	cursor: pointer;
+	box-shadow: 0 0 35px #373433;
+	background-color: #DEC2AB;
+}
+
+.main_button2_Admin-HomePage:hover #buttonReturn-HomePage
+{
+	letter-spacing: 0.05em;
+}
+
+.main-block-HowTo
+{
+	justify-content: center;
+	position: relative;
+	display: inline-block;
+	width: 80%;
+	height: auto;
+	background-color: whitesmoke;
+}
+
+.firstContent-HowTo
+{
+	margin-bottom: 44%;
+}
+
+.firstContentPicture-HowTo
+{
+	box-shadow: 0 0 35px #784C35;
+	margin-top: 6%;
+	margin-right: 3%;
+	width: 50%;
+	float: right;
+}
+
+#firstContentText-HowTo
+{
+	color: #784C35;
+	font-family: PaytoneOne;
+	font-size: 20px;
+	padding-top: 64px;
+	float: left;
+	margin-left: 3%;
+	margin-top: 4.4%;
+	width: 40%;
+}
+
+.separator-HowTo
+{
+	width: 40%;
+}
+
+.headerAndQuestionMark-HowTo
+{
+	margin-top: 15%;
+}
+
+.header2AndQuestionMark-HowTo
+{
+	margin-top: 24%;
+}
+
+#firstheaderText-HowTo
+{
+	font-family: PaytoneOne;
+	font-size: 23px;
+	float: left;
+	color: #373433;
+	transition: 0.5s;
+}
+
+#firstheaderText-HowTo:hover
+{
+	letter-spacing: 0.02em;
+	cursor: default;
+}
+
+#warning-HowTo
+{
+	margin-left: 4%;
+	margin-top: 1%;
+	float: left;
+	font-family: PaytoneOne;
+	color: #C73225;
+	font-size: 14px;
+	cursor: default;
+}
+
+.questionMarks-HowTo
+{
+	margin-left: 1%;
+	float: left;
+	width: 3%;
+}
+
+#headerText-HowTo
+{
+	font-family: PaytoneOne;
+	font-size: 23px;
+	float: left;
+	color: #373433;
+	transition: 0.5s;
+}
+
+#headerText-HowTo:hover
+{
+	letter-spacing: 0.02em;
+	cursor: default;
+}
+
+#text-HowTo
+{
+	margin-left: 4.2%;
+	font-family: Quicksand;
+	font-size: 16px;
+	float: left;
+	text-align: left;
+	cursor: default;
+}
+
+#openHoursAndContactsText-HowTo
+{
+	margin-left: 24%;
+	margin-top: 2%;
+	font-family: Quicksand;
+	font-size: 16px;
+	float: left;
+	color: #C4571B;
+}
+
+#openHoursAndContactsText2-HowTo
+{
+	margin-left: 23.5%;
+	margin-top: 2%;
+	font-family: Quicksand;
+	font-size: 16px;
+	float: left;
+	color: #C4571B;
+	margin-bottom: 2%;
+}
+
+.main-block-Institution
+{
+	display: inline-block;
+	justify-content: center;
+	width: 80%;
+	height: auto;
+	background-color: whitesmoke;
+}
+
+.picture-content-Institution
+{
+	margin-top: 3.3%;
+	display: inline-block;
+	position: relative;
+	width: 40%;
+}
+
+.middle-Institution
+{
+	transition: .5s ease;
+	opacity: 0;
+	position: absolute;
+	top: 60%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%)
+}
+
+#libraryPhoto-Institution
+{
+	margin-top: 10%;
+	opacity: 1;
+	display: block;
+	width: 100%;
+	height: auto;
+	transition: .5s ease;
+	backface-visibility: hidden;
+}
+
+#buttonPhoto-Institution
+{
+	font-family: Quicksand;
+	background-color: #784C35;
+	color: white;
+	font-size: 15px;
+	padding: 16px 32px;
+	text-decoration: none;
+}
+
+.picture-content-Institution:hover #libraryPhoto-Institution
+{
+	opacity: 0.5;
+}
+
+.picture-content-Institution:hover .middle-Institution
+{
+	opacity: 1;
+}
+
+.text-content-Institution
+{
+	margin-top: 2%;
+	float: right;
+	width: 50%;
+	margin-right: 50px;
+}
+
+#institutionText-Institution
+{
+	font-family: Quicksand;
+	font-size: 15px;
+}
+
+#institutionText2-Institution
+{
+	font-family: PaytoneOne;
+	font-size: 18px;
+}
+
+#institutionText3-Institution
+{
+	font-family: PaytoneOne;
+	color: #C4571B;
+	font-size: 15px;
+}
+
+#linkMaps-Institution
+{
+	text-decoration: none;
+}
+
+.main-block-MyAccount
+{
+	display: inline-block;
+	width: 80%;
+	height: auto;
+	background-color: whitesmoke;
+}
+
+.middle-block-MyAccount
+{
+    width: 50%;
+    margin-left: 19.5%;
+    margin-top: 1%;
+    text-align: left;
+    float: center;
+    background-color: #DEC2AB;
+    box-shadow: 0 0 20px #373433;
+}
+
+.userNameField-MyAccount
+{
+    background-color: #373433;
+    text-align: left;
+}
+
+#userNameText-MyAccount
+{
+    font-family: PaytoneOne;
+    color: #C4571B;
+    font-size: 40px;
+    margin-left: 2%;
+}
+
+.right-block-MyAccount
+{
+    margin-top: -18%;
+    float: right;
+    margin-right: 7%;
+    width: 20%;
+}
+
+#userInfoText-MyAccount
+{
+    margin-top: 1%;
+    font-family: Quicksand;
+    margin-left: 2%;
+    font-size: 16px;
+    letter-spacing: 0.05em;
+}
+
+#userInfoText-MyAccount span
+{
+    font-family: Quicksand;
+    color: #C4571B;
+}
+
+#zakladkaImage-MyAccount
+{
+    float: left;
+    width: 15%;
+    margin-left: 5%;
+}
+
+#userTypeInfo-MyAccount
+{
+    margin-top: 10%;
+    margin-bottom: 0;
+}
+
+#userInfoTextFirst-MyAccount
+{
+    font-size: 20px;
+    text-align: center;
+    font-family: PaytoneOne;
+    margin-top: 3%;
+}
+
+#settingsButtons-MyAccount
+{
+    margin-top: 5%;
+	font-family: Quicksand;
+	padding: 10px 30px 10px 30px;
+	box-shadow: 0 0 10px #373433;
+	background-color: #DEC2AB;
+	color: #373433;
+	font-size: 16px;
+	width: 90%;
+	text-align: center;
+	margin-bottom: 2%;
+	transition: 0.5s;
+}
+
+#settingsButtons-MyAccount:hover
+{
+    color: #C4571B;
+	cursor: pointer;
+	box-shadow: 0px 0px 10px #C4571B;
+	background-color: #373433;
+	letter-spacing: 0.05em;
+}
+
+#settingsButtonsLogOut-MyAccount
+{
+    margin-top: 5%;
+    color: crimson;
+    font-family: Quicksand;
+    font-size: 16px;
+    margin-left: 20%;
+    cursor: default;
+	background-color: whitesmoke;
+    transition: 0.3s;
+	border: none;
+}
+
+#settingsButtonsLogOut-MyAccount:hover
+{
+    letter-spacing: 0.02em;
+    cursor: pointer;
+}
+
+.main-block-RentReturn
+{
+	margin-top: 8%;
+	margin-bottom: 8%;
+	border: 2px solid #D3D3D3;
+	background-color: #D3D3D3;
+	border-radius: 15px;
+	width: 45%;
+    justify-content: center;
+    text-align: center;
+}
+
+.main-block-DocTemplate
+{
+	margin-top: 10%;
+	margin-bottom: 2.5%;
+	border: 2px solid #D3D3D3;
+	background-color: #D3D3D3;
+	border-radius: 15px;
+	width: 45%;
+    justify-content: center;
+    text-align: center;
+}
+
+#submitButton-RentReturn
+{
+    margin-top: 4%;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#submitButton-DocTemplate
+{
+    margin-top: 2%;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#cancelButton-RentReturn
+{
+    margin-top: 2%;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3%;
+}
+
+.selectBracket-RentReturn
+{
+    margin-top: 3%;
+    width: 80%;
+    font-family: Quicksand;
+}
+
+#buttonUp-MyBooks
+{
+	float: right;
+	margin-right: 6%;
+	margin-top: 2%;
+	font-family: Quicksand;
+	padding: 10px 30px 10px 30px;
+	box-shadow: 0 0 40px #373433;
+	background-color: #DEC2AB;
+	color: #373433;
+	font-size: 16px;
+	text-align: center;
+	transition: 0.5s;
+}
+
+#buttonUp-MyBooks:hover
+{
+    color: #C4571B;
+	cursor: pointer;
+	box-shadow: 0px 0px 15px whitesmoke;
+	background-color: #373433;
+	letter-spacing: 0.05em;
+}
+
+.defaultBetweenPages
+{
+	background-image: linear-gradient(to right, #373433, #784C35, #784C35, #784C35, #373433);
+	width: 100%;
+	height: auto;
+}
+
+.noDataFound-Text
+{
+	margin-left: 6%;
+	font-family: Quicksand;
+	color: whitesmoke;
+	font-size: 20px;
+}
+
+.product2
+{
+	height: 50px;
+	width: 350px;
+	padding: 10px 10px;
+	background-color: #373433;
+	border-radius: 10px;
+	border: 1px solid #C4571B;
+	transition: 0.5s;
+}
+
+#bookCovers2
+{
+	margin-left: 20%;
+	height: 50px;
+	width: 80%;
+	float: left;
+	border: 0.5px solid #C4571B;
+}
+
+.product3
+{
+	height: 50px;
+	width: 350px;
+	padding: 10px 10px;
+	background-color: #784C35;
+	border-radius: 10px;
+	border: 1px solid #C4571B;
+	margin-right: 10%;
+}
+
+.left3
+{
+	width: 15%;
+}
+
+.title2
+{
+	margin-top: 1.5%;
+	margin-left: 20%;
+	text-align: left;
+	font-family: Quicksand;
+	font-size: 16px;
+	margin-bottom: 0;
+	color: white;
+}
+
+.author2
+{
+	text-align: left;
+	margin-top: 0;
+	font-family: Ephesis;
+	margin-left: 20%;
+	font-size: 20px;
+	color: white;
+}
+
+.block1_Statistics
+{
+	margin-top: 2%;
+	float: left;
+	margin-left: 10%;
+}
+
+.block2_Statistics
+{
+	margin-top: 2%;
+	float: right;
+	margin-right: 10%;
+}
+
+.header1_Statistics
+{
+	font-family: PaytoneOne;
+	font-size: 18px;
+	margin-left: -4%;
+}
+
+.header2_Statistics
+{
+	font-family: PaytoneOne;
+	font-size: 18px;
+	margin-left: 1%;
+}
+
+.mainHeader_Statistics
+{
+	margin-top: 2%;
+	font-family: PaytoneOne;
+	font-size: 30px;
+	text-align: left;
+	margin-left: 6%;
+}
+
+.mainHeaderUnder_Statistics
+{
+	font-family: Quicksand;
+	font-size: 14px;
+	text-align: left;
+	margin-left: 6%;
+}
+
+.headerMain2_Statistics
+{
+	margin-top: 76%;
+	font-family: PaytoneOne;
+	font-size: 22px;
+	text-align: left;
+	margin-left: 6%;
+}
+
+.headerMain3_Statistics
+{
+	margin-top: 2%;
+	font-family: PaytoneOne;
+	font-size: 22px;
+	text-align: left;
+	margin-left: 6%;
+}
+
+.header3_Statistics
+{
+	margin-top: 0.5%;
+	font-family: Quicksand;
+	font-size: 18px;
+	text-align: left;
+	margin-left: 6%;
+}
+
+.header4_Statistics
+{
+	margin-top: 0.5%;
+	font-family: Quicksand;
+	font-size: 18px;
+	text-align: left;
+	margin-left: 6%;
+}
+
+.header5_Statistics
+{
+	margin-top: 0.5%;
+	font-family: Quicksand;
+	font-size: 18px;
+	text-align: left;
+	margin-left: 6%;
+	margin-bottom: 2%;
+}
+
+.header5_Statistics span
+{
+	font-family: Agbalumo;
+	color: #C4571B;
+	font-size: 22px;
+}
+
+.header4_Statistics span
+{
+	font-family: Agbalumo;
+	color: #C4571B;
+	font-size: 22px;
+}
